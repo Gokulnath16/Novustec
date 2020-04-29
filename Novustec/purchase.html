@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Purchase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'><link rel="stylesheet" href="css/cart.css">
+
+
+<style media="screen">
+  body{
+    max-width: 100%;
+  }
+  .sidenav li> a{
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .active{
+    background-color: #e7ece7;
+  }
+  #label_one{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #label_two{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <nav style="padding:70px 0px 0px 0px;background-color: transparent; box-shadow: none;">
+    <center style="color: #3f51b5">
+      <h4>Purchase</h4>
+    </center>
+  </nav>
+
+  <ul id="slide-out" class="sidenav" style="background-color: white;border-right: 1px solid grey;">
+
+    <li><img src="img/novustec.png" class="responsive-img" width="200" height="200" style="padding: 40px 40px 0px 40px;"></li> <br>
+    <li><a href="#!" style="color: black;" class="active">Order</a></li>
+    <li><a href="cart.html"  style="color: black;">Cart</a></li>
+    <li><a href="about.html" style="color: black;">About us</a></li>
+    <li><a href="contact.html" style="color: black;">Contact us</a></li>
+    <li><a href="index.html" style="color: black;">Logout</a></li>
+  </ul>
+
+  <a href="#" data-target="slide-out" class="sidenav-trigger" style="position: absolute;top: 20px;left:20px;color: white;">
+    <i class="small material-icons" style="color: black;">menu</i></a>
+
+</header>
+
+<br><br><br><br><br><br>
+
+<div class="container">
+  <div class="row">
+    <form class="col s12" name="myform" method="post" onsubmit="return (validate());">
+    
+    <p>
+      <span id="label_one">Part Number :</span>
+      <input type="text" id="autocomplete-input" class="autocomplete input-field" name = "part_num"  required/> 
+    <p>
+
+    <p>
+      <span id="label_two"> Quantity : </span>
+      <input type="number" class="form-control" name = "quantity" required/>
+    </p>
+
+<br><br>
+<center>
+  <a onclick="M.toast({html: toastHTML});" href="cart.html" class="btn wave-effect indigo" type="submit">Add to cart</a>
+</center>
+</form>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- partial -->
+  <script  src="js/purchase.js"></script>
+
+</body>
+</html>

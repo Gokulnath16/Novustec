@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'><link rel="stylesheet" href="css/cart.css">
+
+<style media="screen">
+body{
+    max-width: 100%!important;
+}
+.sidenav li> a{
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+}
+.active{
+  background-color: #e7ece7;
+}
+
+</style>
+
+  </head>
+  <body>
+    <header>
+      <nav style="padding:10px;background-color: transparent; box-shadow: none;">
+        <center style="color: #3f51b5">
+          <h4> Cart</h4>
+        </center>
+      </nav>
+
+      <ul id="slide-out" class="sidenav" style="background-color: white;border-right: 1px solid grey;">
+
+        <li><img src="img/novustec.png" class="responsive-img" width="200" height="200" style="padding: 40px 40px 0px 40px;"></li>
+        <li><a href="purchase.html" style="color: black;">Purchase</a></li>
+        <li><a href="#" style="color: black;" class="active">Cart</a></li>
+        <li><a href="about.html" style="color: black;">About us</a></li>
+        <li><a href="contact.html" style="color: black;">Contact us</a></li>
+        <li><a href="index.html" style="color: black;">Logout</a></li>
+      </ul>
+
+      <a href="#" data-target="slide-out" class="sidenav-trigger" style="position: absolute;top: 20px;left:20px;color: white;">
+        <i class="small material-icons" style="color: black;">menu</i></a>
+
+    </header>
+
+<br><br>
+
+<div class="row">
+  <table class="striped centered">
+          <thead>
+            <tr>
+                <th>Part Number</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Quantity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>0433172342079</td>
+              <td>Hole-Type Nozzle</td>
+              <td>1822.00</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>0433172349079</td>
+              <td>Hole-Type Nozzle</td>
+              <td>2465.00</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>0433172368079</td>
+              <td>Hole-Type Nozzle</td>
+              <td>1581.00</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>0433172342079</td>
+              <td>Hole-Type Nozzle</td>
+              <td>1822.00</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>0433172349079</td>
+              <td>Hole-Type Nozzle</td>
+              <td>2465.00</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>0433172368079</td>
+              <td>Hole-Type Nozzle</td>
+              <td>1581.00</td>
+              <td>30</td>
+            </tr>
+
+          </tbody>
+        </table>
+<br><br>
+<center>
+  <a onclick="M.toast({html: toastHTML})">
+        <button class="btn waves-effect waves-light indigo" type="submit" name="action">
+        Submit
+            <i class="material-icons right">send</i>
+      </button>
+  </a>
+</center>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.sidenav').sidenav();
+  });
+
+//Toast
+  var toastHTML = '<span style="font-weight: bold; margin-left: 30%;">Order Placed</span>';
+
+
+</script>
+  </body>
+</html>
